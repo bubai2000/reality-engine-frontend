@@ -1,0 +1,29 @@
+/* Center the modal content */
+.custom-title {
+    background-color: #2196F3;
+    color: white;
+    padding: 16px;
+  }
+  
+  /* Style the OK button and center it */
+  .custom-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  /* Customize the button style */
+  .custom-button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  /* Style the button on hover */
+  .custom-button:hover {
+    background-color: #1976D2;
+  }
+  

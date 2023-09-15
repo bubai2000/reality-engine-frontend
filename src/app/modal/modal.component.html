@@ -1,0 +1,9 @@
+<h2 mat-dialog-title class="custom-title">Your Search Result is Here</h2>
+<div mat-dialog-content>
+  <p><strong>Confidence:</strong> {{ data.message.confidence }}</p>
+    <p><strong>Explanation:</strong> {{ data.message.explanation }}</p>
+    <p><strong>Supporting URL:</strong><a href ="{{ data.message.url }}" target="_blank">{{ data.message.url }}</a></p>
+</div>
+<div mat-dialog-actions class="custom-actions">
+  <button mat-button (click)="closeModal()" class="custom-button">Close</button>
+</div>

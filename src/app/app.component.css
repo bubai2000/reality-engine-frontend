@@ -1,0 +1,39 @@
+/* Increase the width of the search box and adjust padding */
+.input-lg {
+    width: 400px; /* Increase the width as needed */
+    padding: 12px; /* Adjust the padding as needed */
+  }
+  
+  /* Make the search box corners more rounded */
+  .input-lg {
+    border-radius: 12px; /* Increase the border-radius for rounded corners */
+  }
+  
+  /* Center the button horizontally and vertically */
+  .form-group {
+    display: flex; /* Use flexbox to position the elements */
+    align-items: center; /* Center vertically within the form group */
+    margin-bottom: 20px; /* Add some space below the form group */
+  }
+  
+  /* Center the button horizontally within the form group */
+  .btn-container {
+    flex: 1; /* Expand and take up available space */
+    display: flex;
+    justify-content: center; /* Center horizontally within the .btn-container */
+  }
+  
+  /* Change the background color of the button to aqua blue */
+  .btn-primary {
+    background-color: aqua; /* Aqua blue color for the button */
+    color: white; /* Text color for the button */
+    border: none; /* Remove button border */
+    border-radius: 12px; /* Add rounded corners to the button */
+    padding: 12px 20px; /* Adjust padding for the button */
+  }
+  
+  /* Change the button hover color to a darker aqua blue */
+  .btn-primary:hover {
+    background-color: #00ced1; /* Darker aqua blue on hover */
+  }
+  

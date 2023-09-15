@@ -1,0 +1,13 @@
+runtime: nodejs16
+
+instance_class: F1
+
+service: frontend
+
+handlers:
+- url: /
+  static_files: dist/reality-engine/index.html
+  upload: dist/reality-engine/index.html
+
+- url: /
+  static_dir: dist/reality-engine
