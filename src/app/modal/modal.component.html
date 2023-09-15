@@ -1,9 +1,22 @@
-<h2 mat-dialog-title class="custom-title">Your Search Result is Here</h2>
-<div mat-dialog-content>
-  <p><strong>Confidence:</strong> {{ data.message.confidence }}</p>
-    <p><strong>Explanation:</strong> {{ data.message.explanation }}</p>
-    <p><strong>Supporting URL:</strong><a href ="{{ data.message.url }}" target="_blank">{{ data.message.url }}</a></p>
-</div>
-<div mat-dialog-actions class="custom-actions">
-  <button mat-button (click)="closeModal()" class="custom-button">Close</button>
+<div class="modal-wrapper">
+  <div class="modal-component">
+    <h2 mat-dialog-title class="custom-title">Your Search Result is Here</h2>
+    <div class = "custom-result">
+      <div mat-dialog-content>
+        <p *ngIf="data.message.confidence !== null && data.message.confidence !== undefined">
+          <strong>Confidence:</strong> {{ data.message.confidence }}
+        </p>
+        <p *ngIf="data.message.explanation">
+          <strong>Explanation:</strong> {{ data.message.explanation }}
+        </p>
+        <p *ngIf="data.message.url">
+          <strong>Supporting URL:</strong>
+          <a *ngIf="data.message.url" href="{{ data.message.url }}" target="_blank">{{ data.message.url }}</a>
+        </p>
+      </div>
+      <div mat-dialog-actions class="custom-actions">
+        <button mat-button (click)="closeModal()" class="custom-button">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
